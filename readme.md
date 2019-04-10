@@ -12,14 +12,14 @@
 
  >   [点击官网下载](https://www.git-scm.com/download/)(我是在三方软件管家下载的)默认安装即可，安装完成后在安装路径下查询 ‘git ->  git bash即可’；或者在任意目录下右键，查看是否有'Git Bash Here'。 
 
-###设置用户名等信息
+### 设置用户名等信息
    有了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然你也可以对某个仓库指定的不同的用户名和邮箱。
 ```git
 $ git config --global user.name "tsingyun_go"
 $ git config --global user.email "tsingyun_go@163.com"
 ```
 
-##git基础语法
+## git基础语法
 
 |语法          |简述     |备注   |
 |:--          |:--     |:--   |
@@ -45,14 +45,14 @@ $ git config --global user.email "tsingyun_go@163.com"
 |git branch -d dev |删除dev分支||
 
 
-###远程仓库
+### 远程仓库
 注册github账号，因为本地git仓库与github仓库之间传输是通过SSH加密的，故需如下配置：
-####1、创建SSH Key,
+#### 1、创建SSH Key,
   在用户目录下查找.ssh目录下的id_rsa （非对称加密算法的密文）与id_rsa.pub （明文）文件，若无,输入如下命令，若有则跳过
 ```cmd
 ssh-keygen -t rsa -C "your email"
 ```
-###2、添加密文
+### 2、添加密文
    在github上点击登录头像打开 'settings ->  Developer settings  ->  Personal access tokens -> Generate new token '，
 添加你的id_rsa.pub （明文）
 
